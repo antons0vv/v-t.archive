@@ -1,0 +1,445 @@
+@media (orientation: portrait) {
+    .containerObjects {
+        align-items: center;
+        justify-content: flex-start;
+
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .cardBuy {
+        margin-top: 18px;
+    }
+
+    #aboutCardBuy {
+        margin-top: -18px;
+    }
+}
+
+@media (orientation: landscape) {
+    .containerObjects {
+        align-items: flex-start;
+        justify-content: center;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cardBuy {
+        margin-top: 2%;
+    }
+}
+
+@media (min-width:316px) {
+    .containerPostcard img {
+        height: 29vh;
+    }
+
+    #tshirt {
+        margin-top: 0px;
+        height: 48vh;
+    }
+
+    #vinyl {
+        height: 39vh;
+    }
+
+    #stickers {
+        height: 28vh;
+    }
+
+    .buyObjects {
+        margin-top: 16px;
+        height: 55vh;
+    }
+
+    #containerVHS img {
+        width: 70vw;
+    }
+
+    #bag {
+        height: 40vh;
+    }
+
+    #cassette {
+        height: 12vh;
+    }
+
+    #cassette2 {
+        height: 28vh;
+    }
+
+    #tshirt-name {
+        right: 50vw;
+    }
+
+    #vinyl-name {
+        right: 40vw;
+    }
+
+    #vhs-name {
+        right: 6vw;
+    }
+
+    #cassette-name {
+        right: 45vw;
+    }
+
+    #bag-name {
+        right: 6vw;
+    }
+
+    #postcard-name {
+        right: 50vw;
+    }
+
+    .nameObject {
+        padding: 6px 18px;
+    }
+
+    .clip {
+        margin-top: -22px;
+    }
+
+    .containerCardsObjects {
+        margin: 7% 1% 1.5% 1%;
+        height: 95vh;
+    }
+}
+
+@media (min-width:550px) and (orientation: portrait) {
+    .containerPostcard img {
+        height: 40vh;
+    }
+
+    #tshirt {
+        margin-top: 0px;
+        height: 58vh;
+    }
+
+    #vinyl {
+        height: 50vh;
+    }
+
+    #stickers {
+        height: 40vh;
+    }
+
+    .buyObjects {
+        margin-top: 16px;
+        height: 55vh;
+    }
+
+    #containerVHS img {
+        width: 70vw;
+    }
+
+    #bag {
+        height: 50vh;
+    }
+
+    #cassette {
+        height: 15vh;
+    }
+
+    #cassette2 {
+        height: 40vh;
+    }
+
+    #tshirt-name {
+        right: 70vw;
+    }
+
+    #vinyl-name {
+        right: 40vw;
+    }
+
+    #vhs-name {
+        right: 10vw;
+    }
+
+    #cassette-name {
+        right: 60vw;
+    }
+
+    #bag-name {
+        right: 30vw;
+    }
+
+    #postcard-name {
+        right: 70vw;
+    }
+
+    .nameObject {
+        padding: 9px 21px;
+    }
+
+    .clip {
+        margin-top: -26px;
+    }
+
+    .containerCardsObjects {
+        margin: 5% 1% 1.5% 1%;
+        height: 92vh;
+    }
+}
+
+@media (min-width:550px) and (orientation: landscape) {
+    .containerPostcard img {
+        height: 60vh;
+    }
+
+    #tshirt {
+        margin-top: 0px;
+        height: 68vh;
+    }
+
+    #vinyl {
+        height: 60vh;
+    }
+
+    #stickers {
+        height: 60vh;
+    }
+
+    .buyObjects {
+        margin-top: 18px;
+        height: 65vh;
+    }
+
+    #containerVHS img {
+        width: 40vw;
+    }
+
+    #bag {
+        height: 60vh;
+    }
+
+    #cassette {
+        height: 30vh;
+    }
+
+    #cassette2 {
+        height: 60vh;
+    }
+
+    #tshirt-name {
+        right: 80vw;
+    }
+
+    #vinyl-name {
+        right: 40vw;
+    }
+
+    #vhs-name {
+        right: 10vw;
+    }
+
+    #cassette-name {
+        right: 60vw;
+    }
+
+    #bag-name {
+        right: 30vw;
+    }
+
+    #postcard-name {
+        right: 75vw;
+    }
+
+    .nameObject {
+        padding: 12px 24px;
+    }
+
+    .clip {
+        margin-top: -29px;
+    }
+
+    .containerCardsObjects {
+        margin: 2.5% 1%;
+        height: 92vh;
+    }
+
+}
+
+@media (min-width:1030px) {
+    .containerPostcard img {
+        height: 60vh;
+    }
+
+    #tshirt {
+        margin-top: 0px;
+        height: 68vh;
+    }
+
+    #vinyl {
+        height: 60vh;
+    }
+
+    #stickers {
+        height: 60vh;
+    }
+
+    .buyObjects {
+        margin-top: 18px;
+        height: 65vh;
+    }
+
+    #containerVHS img {
+        width: 40vw;
+    }
+
+    #bag {
+        height: 60vh;
+    }
+
+    #cassette {
+        height: 30vh;
+    }
+
+    #cassette2 {
+        height: 60vh;
+    }
+
+    #tshirt-name {
+        right: 80vw;
+    }
+
+    #vinyl-name {
+        right: 40vw;
+    }
+
+    #vhs-name {
+        right: 10vw;
+    }
+
+    #cassette-name {
+        right: 60vw;
+    }
+
+    #bag-name {
+        right: 30vw;
+    }
+
+    #postcard-name {
+        right: 75vw;
+    }
+
+    .nameObject {
+        padding: 12px 24px;
+    }
+
+    .clip {
+        margin-top: -29px;
+    }
+
+    .containerCardsObjects {
+        margin: 2.5% 1%;
+        height: 93vh;
+    }
+}
+
+.containerCardsObjects {
+
+    border: 1px solid #000;
+    border-top: none;
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.containerAllItems {
+    position: relative;
+    overflow: visible;
+
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    width: 100%;
+
+    min-height: 35px;
+    height: 35px;
+
+    transition: height 0.7s ease-in-out;
+}
+
+.containerAllItems:hover {
+    height: 100%;
+}
+
+.containerObjects {
+    position: relative;
+
+    display: flex;
+
+    border-top: 1px solid #000;
+    border-radius: 2px;
+
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.containerAllItems:last-of-type {
+    height: 100%;
+}
+
+.cardBuy {
+    align-items: flex-start;
+}
+
+.buttonBuy {
+    margin-top: 12px;
+}
+
+.counter {
+    flex-direction: row;
+    gap: 12px;
+
+    margin-top: 12px;
+
+    display: none;
+}
+
+.nameObject {
+    position: absolute;
+    top: -3px;
+    right: 100px;
+    z-index: 1;
+
+    display: inline-flex;
+    justify-content: stretch;
+    flex-direction: row;
+    gap: 18px;
+
+    height: 18px;
+
+    background: #FFF;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.05);
+}
+
+.containerPostcard {
+    display: inline-flex;
+    height: fit-content;
+    width: fit-content;
+    gap: 18px;
+    margin-top: 24px;
+}
+
+#containerVHS {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#containerCassette {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}

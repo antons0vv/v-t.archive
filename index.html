@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Время тень</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon1.svg">
+
+    <meta property="og:type" content="article">
+
+    <meta property="og:title" content="Время тень">
+    <meta property="og:description"
+        content="«Время тень» архивирует воспоминания. Оно раскладывает воспоминания на составляющие и сохраняет их, позволяя после вернуться человеку к ним и ощутить себя в прошлом. «Время тень» отказывается от интерпретаций и толкований, предоставляя только максимально точный материал.">
+    <meta property="og:image" content="{img/logo.jpeg}">
+
+    <link rel="stylesheet" href="stylesheet/style.css">
+
+    <script src="javascript/main.js" type="module" charset="UTF-8"></script>
+    <script src="javascript/general.js" type="module" charset="UTF-8"></script>
+</head>
+
+
+<body id="bodyMain" class="slide-in-e2t">
+
+    <div class="loaderContainer">
+
+        <div class="headerContainer">
+            <p class="text">время</p>
+            <p class="text">тень</p>
+        </div>
+
+        <svg id="oval_1" width="125" height="32" viewBox="0 0 125 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="anim" class="path_1" d="M62.5, 16 m-61.5, 0 a 61.5, 15 0 1,0 123,0 a 61.5, 15 0 1,0 -123,0 "
+                stroke="black">
+        </svg>
+
+    </div>
+
+    <div id="paperAbout">
+        <p class="text">?</p>
+    </div>
+    <div id="mainContainer">
+        <div class="containerStroke">
+            <div class="containerName">
+                <div onclick="window.location.href = 'building.html';" id="buildingCard" class="paper cardMain">
+                    <p class="text">1-4-1</p>
+                </div>
+            </div>
+        </div>
+        <div class="containerStroke">
+            <div class="containerName">
+                <div onclick="window.location.href = 'objects.html';" class="paper cardMain" id="objectsCard">
+                    <p class=" text">объекты</p>
+                </div>
+            </div>
+        </div>
+        <div class="containerStroke">
+            <div class="containerName">
+                <div id="boardCard" class="paper cardMain">
+                    <p class="text">доска</p>
+                </div>
+            </div>
+        </div>
+        <div class="containerStroke">
+            <div class="containerName">
+                <div onclick="window.location.href = 'calendar.html';" id="calendarCard" class="paper cardMain">
+                    <p class="text">календарь</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="imgAbove" id="pattern" src="img/mySketch-8.gif" alt="">
+    <img class="imgAbove" id="building" src="img/building.gif" alt="">
+    <img class="imgAbove" id="poster" src="img/calendar.gif" alt="">
+    <img class="imgAbove" id="merch" src="img/merch.gif" alt="">
+</body>
+
+</html>

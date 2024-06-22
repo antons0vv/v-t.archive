@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Wremena";
+    src: url(../fonts/WremenaRegular.woff) format('woff');
+    font-weight: normal;
+}
+
+::selection {
+    color: black;
+    background: #FBFF40;
+}
+
+@media (min-width:316px) {
+
+    button,
+    .text {
+        font-size: 14px;
+    }
+
+    .paper {
+        padding: 24px 18px;
+    }
+}
+
+@media (min-width:550px) {
+
+    button,
+    .text {
+        font-size: 16px;
+    }
+
+    .paper {
+        padding: 27px 21px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    button,
+    .text {
+        font-size: 18px;
+    }
+
+    .paper {
+        padding: 30px 24px;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgba(239, 239, 239, 1);
+    cursor: pointer;
+    height: 100dvh;
+    overflow: hidden;
+}
+
+#bodyMain {
+    cursor: help;
+    overflow: visible;
+}
+
+.text {
+    font-family: "Wremena";
+    color: #000;
+    font-variant-numeric: lining-nums proportional-nums;
+    line-height: 110%
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+
+    font-family: "Wremena";
+    color: #000;
+    font-variant-numeric: lining-nums proportional-nums;
+    line-height: 110%;
+
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.paper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: #FFF;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.05);
+    margin: 2%;
+}
+
+#backArrow {
+    position: absolute;
+    top: 1.5%;
+    left: 50%;
+
+    width: 10px;
+    height: 10px;
+
+    background: none;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    rotate: 45deg;
+
+    cursor: n-resize;
+
+    z-index: 100;
+}
+
+.cardAbout {
+    position: absolute;
+}
+
+.slide-out {
+    animation: slideOut 0.6s forwards;
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.slide-out-rev {
+    animation: slideOutRev 0.6s forwards;
+}
+
+@keyframes slideOutRev {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.slide-in-e2t {
+    animation: slideInE2T 0.5s ease;
+}
+
+@keyframes slideInE2T {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in-t2e {
+    animation: slideInT2E 0.7s ease;
+}
+
+@keyframes slideInT2E {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

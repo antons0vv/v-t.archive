@@ -1,0 +1,268 @@
+    @media (min-width:316px) {
+
+        input,
+        select,
+        option {
+            font-size: 14px;
+        }
+
+        #emailInput {
+            width: 71px;
+        }
+
+        #nameInput {
+            width: 95px
+        }
+
+        .render {
+            max-height: 20vh;
+            top: 4%;
+            right: 5%;
+        }
+
+        .book {
+            max-height: 33vh;
+            top: 26%;
+            left: 0;
+        }
+
+        #txtBuilding {
+            max-width: 250px;
+            max-height: 100px;
+            bottom: 0px;
+            right: 13%;
+            overflow: scroll;
+            justify-content: start;
+        }
+
+        .formReg {
+            bottom: 10%;
+            right: 1%;
+        }
+    }
+
+    @media (min-width:550px) and (orientation: landscape) {
+
+        input,
+        select,
+        option {
+            font-size: 16px;
+        }
+
+        #emailInput {
+            width: 80px;
+        }
+
+        #nameInput {
+            width: 105px
+        }
+
+        .render {
+            max-height: 30vh;
+            top: 3%;
+            right: 3%;
+        }
+
+        .book {
+            max-height: 50vh;
+
+            top: 2%;
+            left: 1%;
+        }
+
+        #txtBuilding {
+            max-width: 400px;
+            max-height: 200px;
+            bottom: 0;
+            right: 0;
+            overflow: scroll;
+            justify-content: start;
+        }
+
+        .formReg {
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    @media (min-width:550px) and (orientation: portrait) {
+
+        input,
+        select,
+        option {
+            font-size: 16px;
+        }
+
+        #emailInput {
+            width: 80px;
+        }
+
+        #nameInput {
+            width: 105px
+        }
+
+        .render {
+            max-height: 25vh;
+            top: 3%;
+            right: 3%;
+        }
+
+        .book {
+            max-height: 50vh;
+
+            top: 28%;
+            left: 1%;
+        }
+
+        #txtBuilding {
+            max-width: 350px;
+            max-height: 150px;
+            bottom: 0;
+            right: 0;
+            overflow: scroll;
+            justify-content: start;
+        }
+
+        .formReg {
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    @media (min-width:1030px) {
+
+        input,
+        select,
+        option {
+            font-size: 18px;
+        }
+
+        #emailInput {
+            width: 91px;
+        }
+
+        #nameInput {
+            width: 116px
+        }
+
+        .render {
+            max-height: 35vh;
+            top: 8%;
+            right: 5%;
+        }
+
+        .book {
+            max-height: 65vh;
+
+            top: 3%;
+            left: 1%;
+        }
+
+        #txtBuilding {
+            max-width: 580px;
+            bottom: 0;
+            right: 0;
+            max-width: 580px;
+            max-height: fit-content;
+            bottom: 0;
+            right: 0;
+            overflow: auto;
+            justify-content: start;
+        }
+
+        .formReg {
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    #txtBuilding {
+        height: fit-content;
+
+        z-index: 1;
+    }
+
+    input,
+    select,
+    option {
+        font-family: "Wremena";
+        color: #000;
+        font-variant-numeric: lining-nums proportional-nums;
+        line-height: 110%
+    }
+
+    .formReg {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .formReg div {
+        display: inline-flex;
+        height: fit-content;
+        max-width: 600px;
+        gap: 12px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #successReg {
+        display: none;
+    }
+
+    select {
+        padding: 0px 4px;
+        border-radius: 2px;
+    }
+
+    input {
+        text-decoration: underline;
+        text-decoration-color: #000;
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+
+        text-align: start;
+    }
+
+    ::placeholder {
+        color: #8C8C8C;
+
+        text-decoration: underline;
+        text-decoration-color: #8C8C8C;
+    }
+
+    textarea:focus,
+    input:focus {
+        outline: none;
+    }
+
+    #subButton {
+        text-decoration: none;
+        cursor: pointer;
+
+        color: #8C8C8C;
+    }
+
+    .enable:hover {
+        text-decoration: underline !important;
+    }
+
+    .render {
+        position: absolute;
+
+        transition: transform 0.5s ease;
+        z-index: 100;
+    }
+
+    .containerRender {
+        max-height: 40vh;
+    }
+
+    .book {
+        position: absolute;
+
+        z-index: 1;
+
+        filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+    }

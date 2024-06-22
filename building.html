@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Пространство 1-4-1</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon1.svg">
+
+    <meta property="og:type" content="article">
+
+    <meta property="og:title" content="Время тень">
+    <meta property="og:description"
+        content="«Время тень» архивирует воспоминания. Оно раскладывает воспоминания на составляющие и сохраняет их, позволяя после вернуться человеку к ним и ощутить себя в прошлом. «Время тень» отказывается от интерпретаций и толкований, предоставляя только максимально точный материал.">
+    <meta property="og:image" content="{img/logo.jpeg}">
+
+    <link rel="stylesheet" href="stylesheet/style.css">
+
+    <script src="javascript/building.js" type="module" charset="UTF-8"></script>
+    <script src="javascript/general.js" type="module" charset="UTF-8"></script>
+</head>
+
+<body class="slide-in-t2e">
+    <div id="backArrow"></div>
+    <img class="book draggable" src="./img/book0.png" alt="">
+    <div class="containerRender">
+        <img class="render" src="img/int2.png" alt="">
+        <img class="render" src="img/aroma.png" alt="">
+        <img class="render" src="img/materials.png" alt="">
+        <img class="render" src="img/picture.png" alt="">
+        <img class="render" src="img/sound.png" alt="">
+        <img class="render" src="img/navigation.png" alt="">
+        <img class="render" src="img/doors.png" alt="">
+        <img class="render" src="img/exterier.png" alt="">
+    </div>
+    <div id="txtBuilding" class="paper cardAbout draggable">
+        <p class="text">Центр 1-4-1&nbsp;&mdash; это пространство для исследования своих воспоминаний. Центр разделён
+            на&nbsp;два части:<br><br>
+            В&nbsp;первой части воспоминания раскладываются на&nbsp;четыре составляющих: звук, изображение, объект
+            и&nbsp;запах.Посетитель проходит через каждый зал и&nbsp;сам исследует объекты воспоминаний, взаимодействуя
+            по&nbsp;отдельности с&nbsp;каждой из&nbsp;частей воспоминаний.<br> <br>
+            Во&nbsp;второй части составляющие воспоминаний снова соединяются, образуя воспоминания. Посетители наблюдают
+            и&nbsp;погружается в&nbsp;происходящее. Через соединение четырёх изученных ранее составляющий, в&nbsp;старых
+            воспоминаниях гости находят новые детали, и&nbsp;также открывают для себя новые воспоминания, собранные
+            из&nbsp;уже изученных объектов.
+        </p>
+    </div>
+
+    <form enctype="text/plain" class="paper cardAbout formReg draggable">
+        <div>
+            <p class="text">Оставьте <input type="text" name="name" autocomplete="name" id="nameInput"
+                    placeholder="имя, фамилию" onchange="this.style.width = ((this.value.length + 1) * 9) + 'px';">
+                <br>и
+                <input type="email" name="email" autocomplete="email" id="emailInput" placeholder="свою почту"
+                    onchange="this.style.width = ((this.value.length + 1) * 9) + 'px';"> для регистрации
+            </p>
+            <select name=" date" id="date">
+                <option value="01.07.2024">1 июля, понедельник</option>
+                <option value="02.07.2024">2 июля, вторник</option>
+                <option value="03.07.2024">3 июля, среда</option>
+                <option value="04.07.2024">4 июля, четверг</option>
+                <option value="05.07.2024">5 июля, пятница</option>
+                <option value="06.07.2024">6 июля, суббота</option>
+                <option value="07.07.2024">7 июля, воскресенье</option>
+            </select>
+            <select name="time" id="time">
+                <option value="12:30–14:00">12:30–14:00</option>
+                <option value="14:00–15:30">14:00–15:30</option>
+                <option value="16:00–17:30">16:00–17:30</option>
+                <option value="17:30–19:00">17:30–19:00</option>
+            </select>
+
+            <input type="submit" value="Зарегистрироваться" id="subButton">
+        </div>
+        <p id="successReg" class="text">Вы зарегистрированы!
+            <br>Билеты отправили на почту
+        </p>
+    </form>
+</body>
+
+</html>

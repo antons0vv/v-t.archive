@@ -1,0 +1,117 @@
+@media (min-width:316px) and (orientation: landscape) {
+    .poster {
+        max-height: 85vh;
+        margin-left: -30%;
+        top: auto;
+    }
+
+    #txtPosters {
+        height: 300px;
+        right: 4vw;
+        max-width: 300px;
+        justify-content: center;
+        overflow: auto;
+    }
+}
+
+@media (min-width:316px) and (orientation: portrait) {
+    .poster {
+        max-height: 60vh;
+        top: 4%;
+    }
+
+    #txtPosters {
+        bottom: 2%;
+        max-width: 300px;
+        height: 150px;
+        justify-content: start;
+        overflow: auto;
+    }
+}
+
+@media (min-width:550px) and (orientation: portrait) {
+    .poster {
+        max-height: 65vh;
+        top: 3%;
+    }
+
+
+    #txtPosters {
+        bottom: 0;
+        max-width: 300px;
+        height: 230px;
+        justify-content: start;
+        overflow: auto;
+    }
+}
+
+@media (min-width:550px) and (orientation: landscape) {
+    .poster {
+        max-height: 85vh;
+        margin-left: -35%;
+        top: auto;
+    }
+
+    #txtPosters {
+        height: fit-content;
+        right: 4vw;
+        max-width: 300px;
+        justify-content: center;
+        overflow: auto;
+    }
+}
+
+@media (min-width:1030px) {
+    .poster {
+        max-height: 90vh;
+        margin-left: 0;
+    }
+
+    .poster {
+        top: auto;
+    }
+
+    #txtPosters {
+        height: fit-content;
+        right: 4vw;
+        max-width: 230px;
+        justify-content: center;
+        overflow: auto;
+    }
+}
+
+.containerCalendar {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#txtPosters {
+    position: absolute;
+
+    align-items: start;
+}
+
+#txtPosters p {
+    margin-bottom: 24px;
+}
+
+#txtPosters p:last-of-type {
+    margin-bottom: 0;
+}
+
+.containerPoster {
+    display: block;
+}
+
+.poster {
+    position: absolute;
+
+    transition: transform 0.5s ease;
+
+    z-index: 100;
+}
