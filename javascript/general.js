@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return Math.floor(Math.random() * 16) - 8;
     }
 
+    // Hover effect
 
     function addHoverEffect(className) {
         const elements = document.querySelectorAll(`.${className}`);
