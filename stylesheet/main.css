@@ -137,13 +137,13 @@
 }
 
 #poster {
-    max-height: 90vh;
+    max-height: 90dvh;
     mix-blend-mode: multiply;
     display: none;
 }
 
 #merch {
-    max-height: 90vh;
+    max-height: 80dvh;
     mix-blend-mode: multiply;
     display: none;
 }

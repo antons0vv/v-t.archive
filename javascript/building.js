@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let emailInput = document.querySelector("input[name='email']");
     const subButton = document.getElementById("subButton");
     const registerForm = document.querySelector(".formReg");
+    const tap = document.getElementById('tap_fx');
 
     function toggleSubmitButton() {
 
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleSubmitButton();
 
     function handleFormSubmit(event) {
+        tap.play();
         event.preventDefault()
 
         let email = emailInput.value;
@@ -48,13 +50,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // Flipping img
 
     const render = document.querySelectorAll('.render');
+    const paper = document.querySelector("#paperFx");
+    const paperSounds = ['/fx/paper1.mp3', '/fx/paper2.mp3', '/fx/paper3.mp3']
 
+    let pCounter = 0;
     function flipping(el) {
         let index = 100;
         el.addEventListener('click', function () {
             index--;
             el.style.zIndex = index;
 
+            paper.src = paperSounds[pCounter];
+            paper.play();
+            pCounter++;
+            pCounter = pCounter % paperSounds.length;
         })
     }
     render.forEach(flipping);
@@ -62,12 +71,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // Book
 
     const book = document.querySelector('.book');
+    const bookPaper = document.querySelector("#bookPaper");
+    const bookSounds = ['/fx/paper2.mp3', '/fx/book.mp3', '/fx/paper3.mp3']
+
     let counterBook = 0;
+    let pCounterBook = 0;
 
     book.addEventListener('click', () => {
         counterBook++
         counterBook = counterBook % 13;
 
         book.src = `./img/book${counterBook}.png`
+
+        bookPaper.src = bookSounds[pCounterBook];
+        bookPaper.play();
+        pCounterBook++;
+        pCounterBook = pCounterBook % bookSounds.length;
     })
 })

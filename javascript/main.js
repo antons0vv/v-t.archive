@@ -29,7 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Transition hmtl
 
+    const tap = document.getElementById('tap_fx');
+
     function goToPage(loc) {
+        tap.play();
         const pageMain = document.getElementById('bodyMain');
         pageMain.style.animation = 'slideOutRev 0.6s forwards';
         setTimeout(() => {
@@ -50,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         goToPage("objects.html");
     });
     boardCard.addEventListener('click', () => {
+        tap.play();
         const pageMain = document.getElementById('bodyMain');
         pageMain.style.animation = 'slideOutRev 0.6s forwards';
         setTimeout(() => {

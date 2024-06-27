@@ -71,12 +71,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Flipping posters 
 
+    const paper = document.querySelector("#paperFx");
+    let pCounter = 0;
+    const paperSounds = ['/fx/paper1.mp3', '/fx/paper2.mp3', '/fx/paper3.mp3']
+
     function flipping(el) {
         let index = 100;
         el.addEventListener('click', function () {
             index--;
             el.style.zIndex = index;
 
+            paper.src = paperSounds[pCounter];
+            paper.play();
+            pCounter++;
+            pCounter = pCounter % paperSounds.length;
         })
     }
     posters.forEach(flipping);

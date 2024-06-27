@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Draggable items
 
     let highestZIndex = 1;
+    const paperFx = document.querySelector("#paperFx");
 
     function makeDraggable(element, stackSelector, cursor) {
         let isMouseDown = false;
@@ -23,13 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         element.addEventListener('mousedown', function (e) {
             isMouseDown = true;
+
             offsetX = e.clientX - element.getBoundingClientRect().left;
             offsetY = e.clientY - element.getBoundingClientRect().top;
-
             if (cursor) {
                 element.style.cursor = cursor;
             }
-
 
             highestZIndex++;
             element.style.zIndex = highestZIndex;
@@ -104,6 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function goToPageMain() {
         const pageThis = document.querySelector("body");
+
+        const tap = document.getElementById('tap_fx');
+        tap.play();
+
         pageThis.style.animation = 'slideOut 0.6s forwards';
         setTimeout(() => {
             window.location.href = 'index.html';
