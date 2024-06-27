@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const render = document.querySelectorAll('.render');
     const paper = document.querySelector("#paperFx");
-    const paperSounds = ['/fx/paper1.mp3', '/fx/paper2.mp3', '/fx/paper3.mp3']
+    const paperSounds = ['fx/paper1.mp3', 'fx/paper2.mp3', 'fx/paper3.mp3']
 
     let pCounter = 0;
     function flipping(el) {
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const book = document.querySelector('.book');
     const bookPaper = document.querySelector("#bookPaper");
-    const bookSounds = ['/fx/paper2.mp3', '/fx/book.mp3', '/fx/paper3.mp3']
+    const bookSounds = ['fx/paper2.mp3', 'fx/book.mp3', 'fx/paper3.mp3']
 
     let counterBook = 0;
     let pCounterBook = 0;

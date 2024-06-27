@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const lastCard = document.querySelector('.containerAllItems:last-of-type');
 
     const paper = document.querySelector("#paperFx");
-    const paperSounds = ['/fx/paper1.mp3', '/fx/paper2.mp3', '/fx/paper3.mp3']
+    const paperSounds = ['fx/paper1.mp3', 'fx/paper2.mp3', 'fx/paper3.mp3']
     let pCounter = 0;
     const setLastCardHeight = (height) => {
         lastCard.style.height = height;

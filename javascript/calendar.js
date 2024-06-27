@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const paper = document.querySelector("#paperFx");
     let pCounter = 0;
-    const paperSounds = ['/fx/paper1.mp3', '/fx/paper2.mp3', '/fx/paper3.mp3']
+    const paperSounds = ['fx/paper1.mp3', 'fx/paper2.mp3', 'fx/paper3.mp3']
 
     function flipping(el) {
         let index = 100;
